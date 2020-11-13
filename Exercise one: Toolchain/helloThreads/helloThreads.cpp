@@ -1,3 +1,9 @@
+/*!
+   \mainpage Lab 1 Toolchain
+   \copyright This code is covered by the Gun general public license v3.0
+   \author Molin Sun
+   \date 12/11/2020
+*/
 /*! \file hellothreads.cpp
     \brief A Documented file.
     
