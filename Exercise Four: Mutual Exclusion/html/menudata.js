@@ -20,32 +20,17 @@ with this program; if not, write to the Free Software Foundation, Inc.,
 @licend  The above is the entire license notice
 for the JavaScript code in this file
 */
-var NAVTREE =
-[
-  [ "Lab 3", "index.html", [
-    [ "Lab 3 Rendezvous", "index.html", null ],
-    [ "Classes", "annotated.html", [
-      [ "Class List", "annotated.html", "annotated_dup" ],
-      [ "Class Index", "classes.html", null ],
-      [ "Class Members", "functions.html", [
-        [ "All", "functions.html", null ],
-        [ "Functions", "functions_func.html", null ]
-      ] ]
-    ] ],
-    [ "Files", "files.html", [
-      [ "File List", "files.html", "files_dup" ],
-      [ "File Members", "globals.html", [
-        [ "All", "globals.html", null ],
-        [ "Functions", "globals_func.html", null ]
-      ] ]
-    ] ]
-  ] ]
-];
-
-var NAVTREEINDEX =
-[
-"_semaphore_8cpp.html"
-];
-
-var SYNCONMSG = 'click to disable panel synchronisation';
-var SYNCOFFMSG = 'click to enable panel synchronisation';
+var menudata={children:[
+{text:"Main Page",url:"index.html"},
+{text:"Classes",url:"annotated.html",children:[
+{text:"Class List",url:"annotated.html"},
+{text:"Class Index",url:"classes.html"},
+{text:"Class Members",url:"functions.html",children:[
+{text:"All",url:"functions.html"},
+{text:"Functions",url:"functions_func.html"}]}]},
+{text:"Files",url:"files.html",children:[
+{text:"File List",url:"files.html"},
+{text:"File Members",url:"globals.html",children:[
+{text:"All",url:"globals.html"},
+{text:"Functions",url:"globals_func.html"},
+{text:"Variables",url:"globals_vars.html"}]}]}]}

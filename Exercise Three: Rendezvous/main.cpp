@@ -1,5 +1,5 @@
 /*!
-   \mainpage Lab 1 Rendezvous
+   \mainpage Lab 3 Rendezvous
    \copyright This code is covered by the GNU general public license v3.0
    \author Molin Sun and Joseph
    \date 12/11/2020

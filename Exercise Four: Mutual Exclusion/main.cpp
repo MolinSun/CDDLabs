@@ -1,5 +1,5 @@
 /*!
-   \mainpage Lab 1 Mutual Exclusion
+   \mainpage Lab 4 Mutual Exclusion
    \copyright This code is covered by the GNU general public license v3.0
    \author Molin Sun and Joseph
    \date 12/11/2020
@@ -14,21 +14,21 @@ static const int num_threads = 100;
 int sharedVariable=0;
 
 
-/*! \fn updateTask
-    \brief An Implementation of Mutual Exclusion using Semaphores
+/*! \fn void updateTask(std::shared_ptr<Semaphore> firstSem, int numUpdates)
+    \brief This function will loop i++ untill i=numUpdates
+    \param firstSem to control the flow
 
-   Uses C++11 features such as mutex and condition variables to implement an example of a rendezvous for threads
-
-*/
+    This function will print "Task One has arrived!" firstly. And then after the second semaphore is signaled, it will print "Task One has left".
+*/ 
 /*! displays a message that is split in to 2 sections to show how a rendezvous works*/
 void updateTask(std::shared_ptr<Semaphore> firstSem, int numUpdates){
 
  
   for(int i=0;i<numUpdates;i++){
     //UPDATE SHARED VARIABLE HERE!
-    firstSem->Wait();
-    sharedVariable++;
     firstSem->Signal();
+    sharedVariable++;
+    firstSem->Wait();
   }
 
 }
