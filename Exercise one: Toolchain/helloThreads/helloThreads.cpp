@@ -1,7 +1,7 @@
 /*!
    \mainpage Lab 1 Toolchain
-   \copyright This code is covered by the Gun general public license v3.0
-   \author Molin Sun
+   \copyright This code is covered by the GNU general public license v3.0
+   \author Molin Sun and Joseph
    \date 12/11/2020
 */
 /*! \file hellothreads.cpp

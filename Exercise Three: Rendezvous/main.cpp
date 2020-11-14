@@ -13,6 +13,8 @@
 void taskOne(std::shared_ptr<Semaphore> firstSem,std::shared_ptr<Semaphore>  secondSem, int delay){
   std::this_thread::sleep_for(std::chrono::seconds(delay));
   std::cout <<"Task One has arrived! "<< std::endl;
+  //wait
+  //signal
   //THIS IS THE RENDEZVOUS POINT!
   std::cout << "Task One has left!"<<std::endl;
 }
@@ -21,6 +23,8 @@ void taskTwo(std::shared_ptr<Semaphore> firstSem, std::shared_ptr<Semaphore> sec
   std::this_thread::sleep_for(std::chrono::seconds(delay));
   std::cout <<"Task Two has arrived "<<std::endl;
   //THIS IS THE RENDEZVOUS POINT!
+  //signal
+  //wait 
   std::cout << "Task Two has left "<<std::endl;
 }
 

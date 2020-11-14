@@ -22,7 +22,7 @@ for the JavaScript code in this file
 */
 var NAVTREE =
 [
-  [ "Lab1", "index.html", [
+  [ "Lab 1", "index.html", [
     [ "Lab 1 Toolchain", "index.html", null ],
     [ "Files", "files.html", [
       [ "File List", "files.html", "files_dup" ],
