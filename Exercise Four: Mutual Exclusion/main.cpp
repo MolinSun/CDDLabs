@@ -16,9 +16,9 @@ int sharedVariable=0;
 
 /*! \fn void updateTask(std::shared_ptr<Semaphore> firstSem, int numUpdates)
     \brief This function will loop i++ untill i=numUpdates
-    \param firstSem to control the flow
+    \param firstSem used for mutual exclusion of the shared variable 
 
-    This function will print "Task One has arrived!" firstly. And then after the second semaphore is signaled, it will print "Task One has left".
+    This function will display a message that is split in to 2 sections to show how a rendezvous works
 */ 
 /*! displays a message that is split in to 2 sections to show how a rendezvous works*/
 void updateTask(std::shared_ptr<Semaphore> firstSem, int numUpdates){
